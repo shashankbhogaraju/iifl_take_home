@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8001:8001"
+    environment:
+      # This routes the LLM calls to the Ollama container
+      - OLLAMA_BASE_URL=http://ollama:11434
+    depends_on:
+      - ollama
+    volumes:
+      # Syncs the generated websites to your physical machine so you can see them
+      - ./output_site:/app/output_site 
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      # Keeps the LLM weights saved so you don't have to redownload them
+      - ollama_data:/root/.ollama
+
+volumes:
+  ollama_data:
