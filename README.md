@@ -94,6 +94,6 @@ sudo docker compose exec ollama ollama pull llama3
 
 *(Note: You will automatically be directed to localhost:8001 after the generation process is complete).*
 
-```
+This is what the website will look once the docker is successfull.
+![[assets/1778857669_grim.pngind]]
 
-```
