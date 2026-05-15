@@ -9,7 +9,7 @@ This system uses an asynchronous job queue and a local instance of Llama 3 to en
 
 ## 🏗️ System Architecture
 
-The core of this engine is a **State Machine** managed by LangGraph. It features three distinct AI agents that critique and correct each other before delivering the final code.
+The core of this engine is a **State Machine** managed by LangGraph. It features three distinct AI agents that critique and correct each other before delivering the final code.```
 
 ```mermaid
 graph TD
