@@ -10,7 +10,7 @@ This system uses an asynchronous job queue and a local instance of Llama 3 to en
 ## 🏗️ System Architecture
 
 The core of this engine is a **State Machine** managed by LangGraph. It features three distinct AI agents that critique and correct each other before delivering the final code.
-The reason to choose ollama, is to have 0 cost for API, instead of other LLM's.
+The reason to choose Llama, is to have 0 cost for API, instead of other LLM's.
 ```mermaid
 graph TD
     %% Styling
