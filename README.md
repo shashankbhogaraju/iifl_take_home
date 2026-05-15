@@ -96,6 +96,7 @@ sudo docker compose exec ollama ollama pull llama3
 
 This is what the website will look once the docker is successfull.
 ![Web Builder Interface](assets/1778857669_grim.png)
+![Output for the demo](assets/output.png)
 
 ### ⚙️ Advanced Configuration: Tuning the Engine
 The LangGraph state machine is currently configured to allow the Coder agent up to **8 attempts** to pass the QA Critic's strict layout checks. I set this limit heuristically, as testing showed that 8 iterations provides the perfect balance between achieving a flawless UI and keeping inference wait times reasonable for an 8B parameter model. 
