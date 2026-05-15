@@ -48,28 +48,29 @@ graph TD
 ## How to Run
 Prerequisites
 
-    Docker and Docker Compose installed.
+   ``` Docker and Docker Compose installed.```
 
 Start the Stack
 
-    Clone the repository and navigate to the directory.
+    ``` Clone the repository and navigate to the directory.
 
-    Spin up the containers:
+    Spin up the containers:```
 
-   ```sudo docker compose up -d --build``` 
+   sudo docker compose up -d --build 
 
-    (First run only) Pull the Llama 3 weights into the local container:
-    Bash
+    ```(First run only) Pull the Llama 3 weights into the local container:
+    Bash```
 
-    ```sudo docker compose exec ollama ollama pull llama3```
+    sudo docker compose exec ollama ollama pull llama3
 
-    Open your browser and navigate to http://localhost:8001.
+    ```Open your browser and navigate to http://localhost:8001.```
 🧪 Demo / Example
 
 The Input Prompt:
 
     "Build a premium, dark-mode landing page for an open-source biomedical signal processing framework called 'NeuroSync'. The Hero section must take up the exact full viewport height, featuring a massive gradient headline, a technical sub-headline, and two CTA buttons ('View Documentation' and 'GitHub'). Below the fold, create a 'Core Capabilities' section using a responsive 3-column grid. Each grid card must contain detailed, realistic technical paragraphs explaining features like 'RRAM Characterization', 'Real-time Processing', and 'Hardware Integration'. Finish with a styled contact form using dark input fields. Do NOT use any 'Lorem Ipsum' or HTML comments."
 ---
+
 /
 ├── docker-compose.yml   # Orchestrates FastAPI and Ollama
 ├── Dockerfile           # Python 3.10 environment build
